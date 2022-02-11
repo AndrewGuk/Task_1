@@ -47,10 +47,7 @@ namespace Task_1
                     goto Input;
                 else 
                     WriteLine("See you soon!");
-
-
             }
-
             catch (ArgumentException e)
             {
                 WriteLine(e.Message);
@@ -92,18 +89,6 @@ namespace Task_1
                         break;
                 }
             }
-            
-
-
-
-
-
-
-
-
-
-
-
         }
     }
 }
