@@ -24,8 +24,8 @@ namespace Task_1
 
             try
             {
-                if ((nails < 1 || nails > 10) || (hits < 1 || hits > 5))
-                    throw new ArgumentException("The number of nails should be from 1 to 10, and the number of hits from 1 to 5!");
+                if ((!Enumerable.Range(1, 10).Contains(nails)) || (!Enumerable.Range(1, 5).Contains(hits)))
+                        throw new ArgumentException("The number of nails should be from 1 to 10, and the number of hits from 1 to 5!");
 
                 for (int i = 1; i <= nails; i++)
                 {
